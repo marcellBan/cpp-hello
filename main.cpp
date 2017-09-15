@@ -1,9 +1,10 @@
 #include <iostream>
+using namespace std;
 
 int main(int argc, char *argv[]) {
-    if (argc > 1)
-        std::cout << "Hello, " << argv[1] << "!" << std::endl;
-    else
-        std::cout << "Hello, World!" << std::endl;
+    cout << "Hello user!\nPlease enter your name: ";
+    string name;
+    getline(cin, name);
+    cout << "Hello " << name << "!" << endl;
     return 0;
 }
